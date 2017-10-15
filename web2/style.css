@@ -125,6 +125,20 @@ table, th, td {
   font-family: 'Press Start 2P', cursive;
 }
 
+@keyframes vg {
+  from { visibility: visible }
+  to { visibility: hidden }
+
+  /* Alternatively you can do this:
+  0% { visibility: visible; }
+  50% { visibility: hidden; }
+  100% { visibility: visible; }
+  if you don't want to use `alternate` */
+}
+
+.cursor {
+  animation: vg steps(1) 500ms infinite alternate;
+}
 .noDec {
   text-decoration: none !important;
   color: white;
@@ -168,7 +182,7 @@ table, th, td {
 }
 
 .form-bottom {
-    
+
     background: #eee;
     padding: 20px 20px 15px 25px;
     -o-transition: opacity .3s;
