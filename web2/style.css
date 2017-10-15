@@ -1,0 +1,273 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Nov 26, 2016, 2:28:29 PM
+    Author     : Bakuano
+*/
+
+
+#navBarIcon {
+    max-width: 100%;
+    height: 200%;
+    margin-top: -10px;
+    -o-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.mainBG {
+    position: relative;
+    background: url(homeBG4.png);
+    background-size: cover;
+    animation-name: intro;
+    animation-duration: 2.0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    overflow: hidden;
+}
+
+@keyframes intro {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.innerBG {
+    padding: 150px 0 150px 0;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+.main {
+    margin: 20px 0 10px 0;
+}
+
+.centerFlex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    border: 0;
+    text-shadow: none;
+    animation: pulse 1.5s ease-out infinite alternate;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1.0,1.0); opacity: 0.5;}
+    50% {opacity: 1.0}
+    100% {transform: scale(1.1,1.1); opacity: 0.5;}
+}
+
+.font1 {
+    font-family: 'Bungee Inline', cursive;
+}
+
+.font2 {
+    font-family: 'Exo', sans-serif;
+}
+
+.buttonColor {
+    border: 0;
+    background-color: #de995e;
+    color: #fff;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+    text-shadow: none;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+    -o-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.buttonColor:hover {
+    opacity: 0.6;
+    color: #fff;
+}
+
+
+/* .buttonColor:focus { outline: 0; opacity: 0.6; background: #de995e; color: #fff; } */
+
+/* .buttonColor:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; background: #de995e; color: #fff; } */
+
+/***** Login Page and Register Page *****/
+
+.login {
+    background-image: url(loginBG.jpg);
+    background-size: cover;
+    text-align: center;
+    font-size: 16px;
+}
+
+.register {
+    background-image: url(registerBG.jpg);
+    background-size: cover;
+
+    font-size: 16px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.scott {
+  animation: drop 2.5s ease-out;
+  animation-iteration-count: 1;
+}
+
+.vgfont {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.noDec {
+  text-decoration: none !important;
+  color: white;
+}
+
+.mysterious {
+  animation: drop 3.5s ease-out;
+  animation-iteration-count: 1;
+}
+
+.form-box {
+    text-align: left;
+    animation: drop 1.5s ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes drop {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.form-top {
+    overflow: hidden;
+    padding: 0 20px 15px 25px;
+    background: white;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.form-top .left {
+    float: left;
+    width: 75%;
+}
+.form-top .right {
+    padding-left: 50px;
+    width: 25%;
+    font-size: 80px;
+    float: left;
+    line-height: 100px;
+}
+
+.form-bottom {
+    
+    background: #eee;
+    padding: 20px 20px 15px 25px;
+    -o-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.form-email, .form-username, .form-password, .form-address, .form-Fname,
+.form-Lname, .form-phonenum, .form-category, .form-delivfee, .form-minorder {
+    opacity: 0.5;
+}
+
+.form-username:focus,
+.form-password:focus,
+.form-password:focus,
+.form-address:focus,
+.form-Fname:focus,
+.form-Lname:focus,
+.form-phonenum:focus,
+.form-category:focus,
+.form-delivfee:focus,
+.form-minorder:focus,
+.form-email:focus {
+    opacity: 1.0;
+}
+
+#rsubmit {
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+/***** End of Login and Register pages *****/
+
+/***** Dashboard and related pages *****/
+
+.dashboardBG {
+    padding: 50px 0 50px 0;
+    color: black;
+    text-align: center;
+    font-size: 3em;
+    animation-name: intro;
+    animation-duration: 2.0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    overflow: hidden;
+    background-image: url(homeBG3.jpg);
+}
+
+.topDash {
+    position: relative;
+    z-index: 1;
+    background-image: url(dashBG5.jpg);
+    background-size: cover;
+}
+
+.topDash::before {
+    content: "";
+    position: absolute;
+    opacity: 0.4;
+    z-index: -1;
+    background-image: url(dashBG5.jpg);
+}
+
+#search {
+    color: black;
+    border: 3px solid orange;
+    border-radius: 4px;
+    width: 10%;
+    opacity: 0.5;
+    font-size: 18px;
+    -o-transition: width 1s ease-in-out;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+#search:focus {
+    opacity: 1;
+    width: 25%;
+}
+
+.searchBar {
+    color: black;
+    border: 3px solid orange;
+    border-radius: 4px;
+    width: 50%;
+    opacity: 0.5;
+    font-size: 18px;
+    -o-transition: width 1s ease-in-out;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+.searchBar:focus {
+    opacity: 1;
+    width: 100%;
+}

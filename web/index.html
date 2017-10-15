@@ -7,11 +7,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Persistant Assassin</title>
+<title>NCR GAN demo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Statistics UI Kit Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<meta name="keywords" content="NCR API Challenge using GAN" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- bootstrap-css -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -20,7 +19,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 <!--// css -->
 <!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="css/font-awesome.css" rel="stylesheet">
 <!-- //font-awesome icons -->
 <!-- font -->
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -53,7 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript">
 	$(document).ready(function () {
 		$('#horizontalTab').easyResponsiveTabs({
-			type: 'default', //Types: default, vertical, accordion           
+			type: 'default', //Types: default, vertical, accordion
 			width: 'auto', //auto or any width like 600px
 			fit: true   // 100% fit in a container
 		});
@@ -88,72 +87,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="content-top">
 		<div class="container">
 			<div class="logo">
-				<h1 class="wow fadeInDown animated" data-wow-delay=".5s">Persistant Assassin Bot</h1>
+				<h1 class="wow fadeInDown animated" data-wow-delay=".5s" style="font-size: 2em;">NCR Generative Adversarial Network</h1>
 			</div>
 
 
-						
+
 				<!-- //weather-grids -->
-				<!-- graph-tabs -->
-				<div class="graph-tabs wow fadeInUp animated" data-wow-delay=".5s">
-					<div class="span12 text-center">
-						<ul class="nav nav-pills" style="display: inline-block;">
-							<li class="active"><a id="negative-positive-graph-button">Negative &amp; Positive Values</a></li>
-							<li><a id="line-graph-button">Line Graph</a></li>
-							<li><a id="custom-colours-button">Custom Colours</a></li>
-							<li><a id="grouped-graph-button">Grouped Graph</a></li>
-							<div class="clearfix"> </div>
-						</ul>
-					</div>
-					<div class="span12 example" id="negative-positive-container">
-						<h3>Generator</h3>
-						<canvas id="negative-positive-graph" height="400" width="960"></canvas>
-					</div>
-					<div class="span12 example" id="line-graph-container" style="display: none;">
-						<h3>Generator v Descriminator</h3>
-						<canvas id="line-graph" height="400" width="900"></canvas>
-					</div>
-					<div class="span12 example" id="custom-colours-container" style="display: none;">
-						<h3>Descriminator</h3>
-						<canvas id="custom-colours" height="400" width="960"></canvas>
-					</div>
-					<div class="span12 example" id="grouped-graph-container" style="display: none;">
-						<h3>GAME OF LIFE</h3>
-						<canvas id="grouped-graph" height="400" width="960"></canvas>
-					</div>
-					
-					<div class="clearfix"> </div>
-				</div>
-				
+
 				<!-- //contact-grids -->
 				<!-- chart-grids -->
 				<div class="chart-grids">
 					<div class="col-md-6 chart-grid-left">
 						<div class="chart-grid-left-info">
 							<div class="chart-grid-left-info-heading wow fadeInUp animated" data-wow-delay=".5s">
-								<h3>Charts</h3>
+								<h3>About Us</h3>
 							</div>
 							<div class="row guttered wow fadeInUp animated" data-wow-delay=".5s">
 								<ul class="span3 multi">
-									<li><button class="toggled" data-type="line-dotted">Line</button></li>
-									<li><button data-type="cumulative">Cumulative</button></li>
-									<li><button data-type="bar">Bar</button></li>
+									<li><button class="toggled" data-type="line-dotted">About Us</button></li>
+									<li><button data-type="cumulative">Data</button></li>
+									<li><button data-type="bar">Sources</button></li>
 								</ul>
 							</div>
-							<figure class="demo" id="chart"></figure>
+              <p> We are students </p>
+							<!-- <figure class="demo" id="chart"></figure> -->
 						</div>
 					</div>
 					<div class="col-md-6 chart-grid-right">
 						<div class="chart-grid-right-info">
 							<h3 class="wow fadeInUp animated" data-wow-delay=".5s">jQuery FaBo Chart Plugin Example 1</h3>
 							<div id="chart1" class="wow fadeInUp animated" data-wow-delay=".5s"></div>
-							<h3 class="wow fadeInUp animated" data-wow-delay=".5s">jQuery FaBo Chart Plugin Example 2</h3>
-							<div id="chart2" class="wow fadeInUp animated" data-wow-delay=".5s"></div>
 						</div>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
-				
+
 				<!-- //footer -->
 				<!-- copyright -->
 				<div class="copyright wow fadeInRight animated" data-wow-delay=".5s">
@@ -167,7 +135,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="js/bars.js"></script>
 	<!-- //skills-bar -->
 	<!-- clock -->
-	<script language="javascript" type="text/javascript" src="js/jquery.thooClock.js"></script>  
+	<script language="javascript" type="text/javascript" src="js/jquery.thooClock.js"></script>
 	<script language="javascript">
 		var intVal, myclock;
 
@@ -229,7 +197,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			$.fn.thooClock.setAlarm(inp);
 		});
 
-		
+
 		function alarmBackground(y){
 				var color;
 				if(y===1){
@@ -250,14 +218,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script type="text/javascript">
 	$(document).ready(function() {
 	// Create two variable with the names of the months and days in an array
-	var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]; 
+	var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
 	var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 
 	// Create a newDate() object
 	var newDate = new Date();
 	// Extract the current date from Date object
 	newDate.setDate(newDate.getDate());
-	// Output the day, date, month and year    
+	// Output the day, date, month and year
 	$('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
 
 	setInterval( function() {
@@ -266,22 +234,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		// Add a leading zero to seconds value
 		$("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
 		},1000);
-		
+
 	setInterval( function() {
 		// Create a newDate() object and extract the minutes of the current time on the visitor's
 		var minutes = new Date().getMinutes();
 		// Add a leading zero to the minutes value
 		$("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
 		},1000);
-		
+
 	setInterval( function() {
 		// Create a newDate() object and extract the hours of the current time on the visitor's
 		var hours = new Date().getHours();
 		// Add a leading zero to the hours value
 		$("#hours").html(( hours < 10 ? "0" : "" ) + hours);
 		}, 1000);
-		
-	}); 
+
+	});
 	</script>
 	<!-- clock-bottom -->
 	<!--skycons-icons-->
@@ -313,7 +281,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 				  icons.play();
 			</script>
-		
+
 		<!-- graph-tabs -->
 		<script src="js/jquery.graphly.min.js"></script>
 		<link rel="stylesheet" media="screen" href="css/bootstrap-responsive.min.css" />
@@ -333,7 +301,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         $('#line-graph-container').fadeIn(300);
                     });
                 });
-                
+
                 $('#custom-colours-button').click(function() {
                     $('li.active').removeClass('active');
                     $('#custom-colours-button').parent().addClass('active');
@@ -341,7 +309,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         $('#custom-colours-container').fadeIn(300);
                     });
                 });
-                
+
                 $('#grouped-graph-button').click(function() {
                     $('li.active').removeClass('active');
                     $('#grouped-graph-button').parent().addClass('active');
@@ -406,7 +374,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<script>
 		$(document).ready(function () {
 			data = {
-			  '2010' : 300, 
+			  '2010' : 300,
 			  '2011' : 200,
 			  '2012' : 100,
 			  '2013' : 500,
@@ -432,5 +400,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 		</script>
 		<!-- //fabochart -->
-</body>	
+</body>
 </html>

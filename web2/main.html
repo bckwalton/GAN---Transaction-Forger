@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Exo" rel="stylesheet" >
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Test GAN</title>
+    </head>
+    <body class="register font2" style="color: white">
+        <div class="container-fluid">
+            <div class="row" style="text-align: center">
+                <div class="col-sm-8 col-sm-offset-2" style="margin-top:0%;">
+                    <img class="logo" src="connect-icon.png" style="transform: scale(0.3, 0.3)">
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4" style="text-align: center">
+                <img class="scott" style="text-align: left" src="scott.gif"></img>
+              </div>
+                <div class="col-sm-4" style="text-align: center">
+                    <div class="form-box" style="color: black;">
+                        <div class="form-top">
+                            <div class="left vgfont">
+                                <h3 style="padding-bottom: 15px;">GAN Results</h3>
+                                <p>Check em out below!</p>
+                            </div>
+                            <div class="right" style="margin-top: 10px;">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <table class="table table-responsive" style="table-layout: fixed; word-wrap:break-word">
+                              <thead>
+                                <tr>
+                                  <th>order #</th>
+                                  <th>prod id</th>
+                                  <th>cust id</th>
+                                  <th>prod name</th>
+                                  <th>dept id</th>
+                                  <th>price</th>
+                                </tr>
+                              </thead>
+                              <tbody id="gantable">
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <p class="vgfont mysterious" style="color: white; padding-top: 15px;"> A mysterious GAN has appeared! </p>
+                    <a class="vgfont mysterious noDec" style="color: gold" href="#" id="ganit">Insert Coin</a>
+                </div>
+                <div class="col-sm-4" style="text-align: center">
+                  <img class="scott" src="scott2.gif"></img>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="./js/javascript.js"></script>
+        <script>
+          $("#ganit").click(function() {
+            gan();
+            //alert("Testing...")
+          });
+        </script>
+    </body>
+</html>
